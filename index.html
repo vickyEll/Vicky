@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD2</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, red, white);
+  margin: 0;
+  color: #333; /* Default text color for better readability */
+}
+
+header {
+  background-color: #c8102e; /* Dark red */
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* Adjusted for dynamic content */
+  background-color: #f2f2f2; /* Light grey background */
+  padding: 20px;
+  border-right: 3px solid red; /* Red border for separation */
+}
+
+nav a {
+  color: #c8102e; /* Dark red for links */
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff; /* White background for content */
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #c8102e; /* Dark red */
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #c8102e; /* Dark red border */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #c8102e; /* Dark red header background */
+  color: white; /* White text in the header */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey for alternating rows */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White for alternating rows */
+}
+
+img {
+  display: block;
+  margin: 20px auto; /* Center the image and add vertical margin */
+  max-width: 100%; /* Make sure image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    float: none;
+  }
+}
+    </style>
+</head>
+<body>
+  
+   <header>
+        <h2>ALAT MUSIK TRADISIONAL</h2>
+    </header>
+    
+    <section>
+        <nav>
+            <ol>
+                <li><a href="https://id.m.wikipedia.org/wiki/Gamelan">Gamelan</a></li>
+                <li><a href="https://id.m.wikipedia.org/wiki/Seruling">Seruling</a></li>
+                <li><a href="https://id.m.wikipedia.org/wiki/Angklung">Angklung</a></li>
+            </ol>
+        </nav>
+        <article>
+            <h1>Alat Musik Tradisional</h1>
+            <p>Alat musik tradisional adalah instrumen musik yang menjadi ciri khas suatu daerah dan diwariskan secara turun-temurun. Alat musik tradisional diciptakan di daerah tertentu sehingga nama, bentuk, dan ciri alat musik setiap wilayah berbeda dengan wilayah lainnya. Meski ada beberapa alat musik yang bentuknya terlihat mirip, perbedaan akan selalu ada, bisa itu dari namanya, cara memainkan, maupun fungsinya. </p>
+            
+            <img src="alat.jpg" alt="berikut contoh gambar alat musik" width="200px" height="200px">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspek</th>
+                        <th>Deskripsi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Definisi</td>
+                        <td>Alat musik tradisional adalah alat musik yang berkembang secara turun menurun pada suatu daerah. Alat musik tersebut biasanya digunakan untuk mengiringi sebuah musik-musik yang terdapat di kalangan masyarakat daerah tersebut.</td>
+                    </tr>
+                    <tr>
+                        <td>Sejarah</td>
+                        <td>lahir dan berkembang dari kebudayaan suatu daerah, kemudian diwariskan secara turun temurun. </td>
+                    </tr>
+                    <tr>
+                        <td>Contoh</td>
+                        <td>Contoh Gamelan adalah musik ansambel tradisional Jawa dan Bali di Indonesia yang memiliki tangga nada pentatonis dalam sistem tangga nada (laras) slendro dan pelog. Terdiri dari instrumen musik perkusi yang digunakan pada seni musik karawitan.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
